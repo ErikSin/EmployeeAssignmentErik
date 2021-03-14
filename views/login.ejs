@@ -1,0 +1,31 @@
+<%- include ('partials/head.ejs') %>
+
+<body class="login-register">
+    
+    <div class="center-container">
+        <h1 class="log-reg-header">Please Sign In</h1>
+    
+        <form class="userInfo" method="POST" action="" >
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required >
+            </div>
+            <div>
+                <label for="password">Password:</label> 
+                <input type="password" name="password" required>
+            </div>
+            <% if (error != null) { %>
+            <div class="errorMessage">
+                <p><%= error.message %></p>
+            </div>
+            <% } %>
+            <div>
+                <button type="submit">Sign in</button>
+                <div class="btn"><a href='/route/register'>Create Account</a></div>
+                
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
