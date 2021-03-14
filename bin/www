@@ -9,7 +9,7 @@ var debug = require('debug')('gen-erik-pinterest:server');
 var http = require('http');
 
 
-var port = normalizePort(7891);
+var port = normalizePort(process.env.port || 9876);
 app.set('port', port);
 
 /**
