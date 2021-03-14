@@ -2,7 +2,7 @@
 
 `This site was created for NAIT DMIT 2018, Instructor: Jim Foley`
 
-##By Erik Sin
+## By Erik Sin
 
 ### Functionality
 User can create and account, login with account, and logout
